@@ -1,34 +1,34 @@
 @font-face {
     font-family: Lemon;
-    src: url('Font/LemonMilklight.otf') ;
+    src: url('../Font/LemonMilklight.otf') ;
 }
 @font-face {
     font-family: Roboto;
-    src: url('Font/Roboto-thin.ttf') ;
+    src: url('../Font/Roboto-thin.ttf') ;
     font-style: normal;
     font-weight: 100;
 }
 @font-face {
     font-family: Ayround;
-    src: url('Font/ARLRDBD.ttf') ;
+    src: url('../Font/ARLRDBD.ttf') ;
 }
 @font-face {
     font-family: agencyr;
-    src: url('Font/AGENCYR.ttf') ;
+    src: url('../Font/AGENCYR.ttf') ;
 }
 @font-face {
     font-family: zab;
-    src: url('Font/zab.ttf') ;
+    src: url('../Font/zab.ttf') ;
 }
 @font-face {
     font-family: Montserrat;
-    src: url('Font/Montserrat-bold.ttf') ;    
+    src: url('../Font/Montserrat-bold.ttf') ;    
     font-style: normal;
     font-weight: 500;
 }
 @font-face {
     font-family: Montserratr;
-    src: url('Font/Montserrat-medium.ttf') ;
+    src: url('../Font/Montserrat-medium.ttf') ;
     font-style: normal;
     font-weight: 100;
 }
