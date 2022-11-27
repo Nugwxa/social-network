@@ -7,6 +7,7 @@ if (Login::isLoggedIn()) {
 }
 
 ?>
+
 <!DOCTYPE html>
 <html style="overflow-x: hidden;">
 <head>
@@ -17,46 +18,27 @@ if (Login::isLoggedIn()) {
         <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="landing-body">
 
+        <div class="login-container">
+			<img src="images/Landing/Troftey_logo(Landing).png">
+			<form action="login.php" method="post">
 
-
-        <img class="wave" src="images/wave.png">
-
-        <div class="container">
-                <div class="img">
-                        <img src="images/illustrations/home.png">
+				<div class="landing-input">
+                        <input placeholder="Username" class="input"  type="text" name="username" value="" >
                 </div>
-                <div class="login-container">
-                        <form action="login.php" method="post">
-                                <img class="avatar" src="images/illustrations/male_avatar.svg">
-                                <h2>Welcome</h2>
-                                <div class="input-div">
-                                        <div class="i">
-                                                <i class="fas fa-user"></i>
-                                        </div>
-                                        <div>
-                                                <h5>Username</h5>
-                                                <input class="input"  type="text" name="username" value="" >
-                                        </div>
-                                </div>
-
-                                <div class="input-div">
-                                        <div class="i">
-                                                <i class="fas fa-lock"></i>
-                                        </div>
-                                        <div>
-                                                <h5>Password</h5>
-                                                <input class="input" type="password" name="password" value="" >
-                                        </div>
-                                </div>
-                                <a id="signup" href="forgot-password.php">Sign up</a>
-
-                                <a id="forgot" href="forgot-password.php">Forgot Password?</a>                                
+				
+				<div class="landing-input">
+                        <input placeholder="Password" class="input" type="password" name="password" value="" >
+                </div>
+				
+				<div class="log-text">
+					<a href="forgot-password.php">Forgot Password?</a><br>
+					<a href="create-account.php">Sign Up</a><br>
+				</div>                    
                                 
-                                <input type="submit" class="btn" name="login" value="Login">
-                        </form>
-                </div>
+                <input id="log-submit" type="submit" class="btn" name="login" value="LOG IN">
+			</form>
         </div>
 
                 
