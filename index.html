@@ -1,12 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Vance Test</title>
-	<meta charset="UTF-8">
-</head>
-<body>
-	
-	<h1>This will be used to test frontend stuff</h1>
+<!--THIS PAGE IS USED TO TEST DESIGNS-->
 
+<!DOCTYPE html>
+<html style="overflow-x: hidden;">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Login | Vance Social&trade;</title>
+        <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="landing-body">
+
+        <div class="login-container">
+			<img src="images/Landing/Troftey_logo(Landing).png">
+			<form action="login.php" method="post">
+
+				<div class="landing-input">
+                        <input placeholder="Username" class="input"  type="text" name="username" value="" >
+                </div>
+				
+				<div class="landing-input">
+                        <input placeholder="Password" class="input" type="password" name="password" value="" >
+                </div>
+				
+				<div class="log-text">
+					<a href="forgot-password.php">Forgot Password?</a><br>
+					<a href="create-account.php">Sign Up</a><br>
+				</div>                    
+                                
+                <input id="log-submit" type="submit" class="btn" name="login" value="LOG IN">
+			</form>
+        </div>
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
