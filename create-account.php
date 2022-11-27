@@ -39,24 +39,36 @@ if (isset($_POST['createaccount'])) {
 <!DOCTYPE html>
 <html style="overflow-x: hidden;">
 <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Sign Up | Vance Social&trade;</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body class="landing-body">
+        <div class="login-container">
+                <img src="images/Landing/Troftey_logo(Landing).png">
+                <form action="create-account.php" method="post"> 
+                        <div class="landing-input">
+                                <input style="color: white; font-family: arial;" required="true" type="text" name="username" value="" placeholder="Username">
+                        </div>
 
-<h1 style="color: white; text-align: center; font-size: 70px; font-family: Roboto;"><img id="headlogo" src="images/disologo.png" alt="ABBA" ></h1>
-<h1 id="Jointhenetwork" style="color: #e9a068 ; text-align: center; font-family: Roboto; margin-top: -4%;">Join the Network</h1>
-<form id="foorm" action="create-account.php" method="post">
-<input id="inpuut" style="color: white; font-family: arial;" required="true" type="text" name="username" value="" placeholder="Username"><p />
-<input id="inpuut" style="color: white; font-family: arial;" required="true" type="password" name="password" value="" placeholder="Password"><p />
-<input id="inpuut" style="color: white; font-family: arial;" required="true" type="email" name="email" value="" placeholder="Email"><p />
-<input id="buton" type="submit" name="createaccount" value="Join">
-</form>
+                        <div class="landing-input">
+                                <input style="color: white; font-family: arial;" required="true" type="password" name="password" value="" placeholder="Password">
+                        </div>
 
-<p id="tarms" >By clicking 'Join' you agree to our <a target="_blank" style="color: #e89d63; text-decoration: none;" href="#">Policies</a></p>
+                        <div class="landing-input">
+                                <input style="color: white; font-family: arial;" required="true" type="email" name="email" value="" placeholder="Email">
+                        </div>
 
-<p style=" text-align: center; color: #4daea5;">Existing User ? <a style="color: #e89d63; text-decoration: none;" href="login.php">Sign In</a> </p>
+                        <div class="log-text">
+					<a href="login.php">Log in</a><br>
+					<a>By clicking 'Join' you agree to our <a target="_blank" style="color: #D15A87; text-decoration: none;" href="#">Policies</a></a><br>
+				</div>           
 
+                        <input id="log-submit" type="submit" name="createaccount" value="Join">
+                </form>
+        </div>
 </body>
 </html>
