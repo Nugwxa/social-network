@@ -26,23 +26,6 @@ if (isset($_POST['confirm'])) {
 </head>
 <body>
 
-        <section id="nav">
-                <div>
-  <ul>
-    <li><a class="nava" href="#">Home</a></li>
-    <li><a class="nava" href="#">Notifications</a></li>
-    <li><a class="nava" href="#">Messages</a></li>
-    <li><input type="text" placeholder="Search Diso" name=""></li>
-    <li><div class="dropdown"><button class="dropbtn">User</button>
-          <div class="dropdown-content">
-    <a href="my-account.php">My Account</a>
-    <a href="change-password.php">Change Password</a>
-  </div>
-    </div></li>
-  </ul>
-</div>
-        </section>
-
 <section id="logout">
         <div><h1>LOGOUT</h1></div>
 <p id="q1234" style="color: white; text-align: center; font-family: agencyr; ">Are you sure you want to log out ?</p>
@@ -54,45 +37,5 @@ if (isset($_POST['confirm'])) {
 </form><br>
 </section>
 </body>
-
-<footer id="last">
-        <div>
-                <nav>
-                        <ul>
-                                <li>
-                                        <a href="#">About Us</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Support</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Press</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">API</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Jobs</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Privacy</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Terms</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Directory</a>
-                                </li>
-                        </ul>
-                </nav>
-        </div>
-</footer>
 
 </html>
