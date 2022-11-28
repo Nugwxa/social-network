@@ -71,23 +71,6 @@ if (!Login::isLoggedIn()) {
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body style="overflow-x: hidden; ">
-        <section id="nav">
-                <div>
-  <ul>
-    <li><a class="nava" href="index.php">Home</a></li>
-    <li><a class="nava" href="#">Notifications</a></li>
-    <li><a class="nava" href="#">Messages</a></li>
-    <li><input type="text" placeholder="Search Diso" name=""></li>
-    <li><div class="dropdown"><button class="dropbtn">User</button>
-          <div class="dropdown-content">
-    <a href="My-Account.php">My Account</a>
-    <a href="Change-password.php">Change Password</a>
-    <a href="logout.php">Logout</a>
-  </div>
-    </div></li>
-  </ul>
-</div>
-        </section>
 	<section id="headtag">
 	<h1><?php echo $username; ?><?php if ($verified) { echo ' <img src="images/verified.png" title="Verified User" >'; } ?></h1>
 	
@@ -128,78 +111,9 @@ if (!Login::isLoggedIn()) {
 
 <h3 style="text-align: center;">Posts by <span style="color: #ed2089;"><?php echo $username; ?> </span></h3>
 
-<section id="pgr1279">
-        <div>
-                <h1>Users to follow</h1>
-                <p>
-                        <img id="dino" src="images/teeth.jpg">
-                        <span><a class="User" href="profile.php?username=AceFootballLeague">AFL <?php if ($verified) { echo ' <img id="err" src="images/verified.png" title="Verified User" >'; } ?></a> <?php
-        if ($userid != $followerid) {
-                if ($isFollowing) {
-                        echo '  <br><input id="unfollow2" type="submit" name="unfollow" value="Following">';
-                } else {
-                        echo '<input id="follow2" type="submit" name="follow" value="Follow">';
-                }
-        }
-        ?></span>
-                </p>
-                <hr>
-                <p>
-                        <img id="dino" src="images/p9.jpg">
-                        <span><a class="User" href="profile.php?username=Phavor9">Phavor9 <?php if ($verified) { echo ' <img id="err" src="images/verified.png" title="Verified User" >'; } ?></a> <?php
-        if ($userid != $followerid) {
-                if ($isFollowing) {
-                        echo '  <br><input id="unfollow2" type="submit" name="unfollow" value="Following">';
-                } else {
-                        echo '<input id="follow2" type="submit" name="follow" value="Follow">';
-                }
-        }
-        ?></span>
-                </p>
-        </div>
-</section>
 
 <section id="post-section">
 <?php echo $posts; ?>
 </section>
 </body>
-<footer id="last">
-	<div>
-		<nav>
-			<ul>
-				<li>
-					<a href="#">About Us</a>
-				</li>
-				&#8226;
-				<li>
-					<a href="#">Support</a>
-				</li>
-				&#8226;
-				<li>
-					<a href="#">Press</a>
-				</li>
-				&#8226;
-				<li>
-					<a href="#">API</a>
-				</li>
-				&#8226;
-				<li>
-					<a href="#">Jobs</a>
-				</li>
-				&#8226;
-				<li>
-					<a href="#">Privacy</a>
-				</li>
-				&#8226;
-				<li>
-					<a href="#">Terms</a>
-				</li>
-				&#8226;
-				<li>
-					<a href="#">Directory</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-</footer>
 </html>
