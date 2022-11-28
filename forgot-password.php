@@ -16,22 +16,15 @@ if (isset($_POST['resetpassword'])) {
 <head>
         <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
         <title>Reset Password | Vance Social</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<section id="nav3">
-                <div>
-  <ul>
-    <li><a href="index.php"><span>DISO</span></a></li>
-  </ul>
-</div>
-</section>
 
-<section id="rest">
+<section>
 <h1>Reset Password</h1>
 <form action="forgot-password.php" method="post">
-        <input id="eail" type="text" name="email" value="" placeholder="Email"><br>
-        <input id="restp" type="submit" name="resetpassword" value="Reset Password">
+        <input type="text" name="email" value="" placeholder="Email"><br>
+        <input type="submit" name="resetpassword" value="Reset Password">
 </form>
 </section>
 </body>
