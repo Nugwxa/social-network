@@ -5,26 +5,18 @@
 <head>
         <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Change Password | Vance Social</title>
+        <title>MY ACCOUNT | Vance Social</title>
 </head>
 <body class="landing-body">
 
 	<div class="login-container">
-		<h1 style="font-size: 30px; padding-left: 20px; padding-right: 20px; color: #E8E8E8;">Change Password</h1>
+		<h1 style="font-size: 30px; padding-left: 20px; padding-right: 20px; color: #E8E8E8;">Upload a profile image</h1>
 		<form action="changetophp" method="post">
 			<div class="landing-input">
-				<input required="true"  type="password" name="oldpassword" value="" placeholder="Current Password">
+				<input type="file" accept="image/png, image/jpeg" name="profileimg">
 			</div>
 
-			<div class="landing-input">
-				<input required="true" type="password" name="newpassword" value="" placeholder="New Password">
-			</div>
-
-			<div class="landing-input">
-				<input required="true" type="password" type="password" name="newpasswordrepeat" value="" placeholder="Repeat New Password">
-			</div>
-
-			<input id="log-submit" type="submit" name="changepassword" value="Change Password">
+			<input id="log-submit" type="submit" name="uploadprofileimg" value="Upload Image">
 		</form>
 	</div>
 </body>
