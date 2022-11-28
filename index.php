@@ -39,95 +39,7 @@ if (!Login::isLoggedIn()) {
 	<title>Vance Social</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-<section id="nav2">
-                <div>
-  <ul>
-    <li><a class="nava" href="index.php">Home</a></li>
-    <li><a class="nava" href="#">Notifications</a></li>
-    <li><a class="nava" href="#">Messages</a></li>
-    <li><input type="text" placeholder="Search Vance" name=""></li>
-    <li><div class="dropdown"><button class="dropbtn">User</button>
-          <div class="dropdown-content">
-    <a id="hged" href="My-Account.php">My Account</a>
-    <a href="Change-password.php">Change Password</a>
-    <a id="gred" href="logout.php">Logout</a>
-  </div>
-    </div></li>
-  </ul>
-</div>
-</section>
-<br>
 <body >
-        <br><br><br>
-        
-<section id="ag7">
-        <div>
-                <h1>Trending Hashtags</h1>
-                <p><a href="">#Troftey</a></p>
-                <p><a href="">#AFL</a></p>
-                <p><a href="">#MUFC</a></p>
-                <p><a href="">#DaveSaves</a> </p>
-                <p><a href="">#Pogba</a></p>
-                <p><a href="">#TigerWoods</a></p>
-                <p><a href="">#Davidoliveinconcert</a></p>
-                <p><a href="">#DeGea</a></p>
-                <p><a href="">#Wizkid</a></p>
-                <p><a href="">#PostMalone</a></p>
-        </div>
-</section>
-<section id="last">
-    <div>
-                <nav>
-                        <ul>
-                                <li>
-                                        <a href="#">About Us</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Support</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Press</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">API</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Jobs</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Privacy</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Terms</a>
-                                </li>
-                                &#8226;
-                                <li>
-                                        <a href="#">Directory</a>
-                                </li>
-                                 &#8226;
-                                <li>
-                                        <a href="#">Profiles</a>
-                                </li>
-                                 &#8226;
-                                <li>
-                                        <a href="#">Hashtags</a>
-                                </li>
-
-
-                        </ul>
-
-                        <p>&copy; 2019 Diso</p>
-                </nav>
-        </div>
-</section>
-
 <section id="d9786">
 <?php
 $showTimeline = False;
@@ -140,8 +52,8 @@ if (Login::isLoggedIn()) {
 <html>
 <head>
     <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
-    <title>Diso - THE TRUE NETWORK</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Vance Social</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body id="indexbody">
     <h1 style="color: white; text-align: center; font-size: 70px; font-family: Roboto;"><img id="indexlogo" src="images/disologo.png" title="DISO" alt="Diso" ></h1>
