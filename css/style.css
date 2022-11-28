@@ -33,11 +33,11 @@
     font-weight: 100;
 }
 
-::placeholder{
-	color: white;
-	opacity: 1;
-	
+
+*{
+	font-family: Montserratr;
 }
+
 
 /*Login & Sign up*/
 .landing-body{
@@ -153,7 +153,6 @@
 .login-container form #log-submit:hover{
 	cursor: pointer;
 }
-
 
 @media screen and (max-width: 1050px){
 	
