@@ -15,7 +15,6 @@ if (Login::isLoggedIn()) {
         <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Login | Vance Social&trade;</title>
-        <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="landing-body">
@@ -35,9 +34,9 @@ if (Login::isLoggedIn()) {
 				<div class="log-text">
 					<a href="forgot-password.php">Forgot Password?</a><br>
 					<a href="create-account.php">Sign Up</a><br>
-				</div>                    
+				</div>
                                 
-                <input id="log-submit" type="submit" class="btn" name="login" value="LOG IN">
+                                <input id="log-submit" type="submit" class="btn" name="login" value="LOG IN">
 			</form>
         </div>
 
