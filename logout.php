@@ -29,7 +29,7 @@ if (isset($_POST['confirm'])) {
 <section id="logout">
         <div><h1>LOGOUT</h1></div>
 <p id="q1234" style="color: white; text-align: center; font-family: agencyr; ">Are you sure you want to log out ?</p>
-<form id="foorm" action="logout.php" method="post">
+<form action="logout.php" method="post">
 
 <input style="margin-left: 4%;" type="checkbox" name="alldevices" value="alldevices"><a  id="e5123"> Logout of all devices </a><br><br>
 

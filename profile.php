@@ -87,7 +87,7 @@ if (!Login::isLoggedIn()) {
         <br><br>
 </form>
 </section>
-<form id="A" action="profile.php?username=<?php echo $username; ?>" enctype="multipart/form-data">
+<form action="profile.php?username=<?php echo $username; ?>" enctype="multipart/form-data">
 	<?php
 
 	if ($userid != $followerid) {

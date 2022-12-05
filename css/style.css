@@ -154,6 +154,24 @@
 	cursor: pointer;
 }
 
+/*Logout*/
+
+.login-container .logout-input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 40px;
+	margin-top: 16px;
+	margin-left: 5%;
+	line-height:40px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	color: #FFFFFF;
+}
+
+
+
 @media screen and (max-width: 1050px){
 	
 }

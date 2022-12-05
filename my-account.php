@@ -22,7 +22,7 @@ if (isset($_POST['uploadprofileimg'])) {
 
 	<div class="login-container">
 		<h1 style="font-size: 30px; padding-left: 20px; padding-right: 20px; color: #E8E8E8;">Upload a profile image</h1>
-		<form action="changetophp" method="post">
+		<form action="my-account.php" method="post">
 			<div class="landing-input">
 				<input type="file" accept="image/png, image/jpeg" name="profileimg">
 			</div>
