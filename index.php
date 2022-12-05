@@ -6,41 +6,16 @@ include('./classes/Comment.php');
 include('./classes/Follower.php');
 ?>
 
-<?php
-if (!Login::isLoggedIn()) {
-	die('
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="icon" href="images/FAVICON.png" type="image/x-icon">
-	<title>Welcome | Vance Social</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body id="indexbody">
-	<h1 style="color: white; text-align: center; font-size: 70px; font-family: Roboto;"><img id="indexlogo" src="images/logo.png" title="Vance" alt="V Logo" ></h1>
-	<br><br>
-	<form>
-	<button formaction="Login.php" id="indexlog">Log In</button> <button formaction="create-account.php" id="indexbuton">Sign Up</button>
-	</form>
-
-</body>
-</html>
-
-');
-}
-?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
     
 	<link rel="icon" href="images/FAVICON.png" type="image/x-icon">
-	<title>Vance Social</title>
+	<title>Home | Vance Social</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
-<section id="d9786">
 <?php
 $showTimeline = False;
 if (Login::isLoggedIn()) {
@@ -48,22 +23,35 @@ if (Login::isLoggedIn()) {
         $showTimeline = True;
 } else {
         die('
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
-    <title>Vance Social</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body id="indexbody">
-    <h1 style="color: white; text-align: center; font-size: 70px; font-family: Roboto;"><img id="indexlogo" src="images/disologo.png" title="DISO" alt="Diso" ></h1>
-    <br><br><br><br><br><br>
-    <form>
-    <button formaction="Login.php" id="indexlog">Log In</button> <button formaction="create-account.php" id="indexbuton">Sign Up</button>
-    </form>
-
-</body>
-</html>
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
+                <title>Welcome | Vance Social</title>
+                <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+        <body class="index-body">
+        
+                <div id="logo-container">
+                        <div>
+                                <img id="index-logo" src="images/Landing/Troftey_logo(Landing).png" title="Vance" alt="V Logo" >
+                        </div>
+                        <div>
+                                <button class="index-btn" id="index-log-btn">Log In</button> <button class="index-btn" id="index-sign-btn">Sign Up</button>
+                        </div>
+                </div>
+                
+                <script type="text/javascript">
+                        document.getElementById("index-log-btn").onclick = function () {
+                                location.href = "login.php";
+                        };
+        
+                        document.getElementById("index-sign-btn").onclick = function () {
+                                location.href = "create-account.php";
+                        };
+                </script>
+        </body>
+        </html>
 
 ');
 }
@@ -108,7 +96,6 @@ foreach($followingposts as $post) {
         ";
 }
 ?>
-</section>
 </body>
 </html>
 

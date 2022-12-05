@@ -3,24 +3,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Reset Password | Vance Social&trade;</title>
+	<link rel="icon" href="images/FAVICON.png" type="image/x-icon">
+	<title>Welcome | Vance Social</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="landing-body">
+<body class="index-body">
 
-	<div class="login-container">
-		<img src="images/Landing/Troftey_logo(Landing).png">
-		<form action="forgot-password.php" method="post">
-			<div class="landing-input">
-
-				<input class="input" type="text" name="email" value="" placeholder="Email">
-			
-			</div>
-
-			<input id="log-submit" type="submit" name="resetpassword" value="Reset Password">
-		</form>
+	<div id="logo-container">
+		<div>
+			<img id="index-logo" src="images/Landing/Troftey_logo(Landing).png" title="Vance" alt="V Logo" >
+		</div>
+		<div>
+			<button class="index-btn" id="index-log-btn">Log In</button> <button class="index-btn" id="index-sign-btn">Sign Up</button>
+		</div>
 	</div>
+	
+	<script type="text/javascript">
+		document.getElementById("index-log-btn").onclick = function () {
+			location.href = "login.php";
+		};
+
+		document.getElementById("index-sign-btn").onclick = function () {
+			location.href = "create-account.php";
+		};
+	</script>
 </body>
 </html>
 
