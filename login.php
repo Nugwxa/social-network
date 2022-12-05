@@ -25,12 +25,12 @@ if (Login::isLoggedIn()) {
 			<form action="login.php" method="post">
 
 				<div class="landing-input">
-                        <input placeholder="Username" class="input"  type="text" name="username" value="" >
-                </div>
+                                        <input placeholder="Username" class="input"  type="text" name="username" value="" >
+                                </div>
 				
 				<div class="landing-input">
-                        <input placeholder="Password" class="input" type="password" name="password" value="" >
-                </div>
+                                        <input placeholder="Password" class="input" type="password" name="password" value="" >
+                                </div>
 				
 				<div class="log-text">
 					<a href="forgot-password.php">Forgot Password?</a><br>
