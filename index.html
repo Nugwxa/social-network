@@ -5,20 +5,20 @@
 <head>
         <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Logout | Vance Social&trade;</title>
+        <title>Reset Password | Vance Social&trade;</title>
 </head>
 <body class="landing-body">
 
 	<div class="login-container">
 		<img src="images/Landing/Troftey_logo(Landing).png">
-		<form action="logout.php" method="post">
-			<div class="logout-input">
-				
-				<input id="logout-checkbox" type="checkbox" name="alldevices" value="alldevices"> <label for="logout-checkbox">Logout of all devices</label>
-				
+		<form action="forgot-password.php" method="post">
+			<div class="landing-input">
+
+				<input class="input" type="text" name="email" value="" placeholder="Email">
+			
 			</div>
 
-			<input id="log-submit" type="submit" name="confirm" value="Logout">
+			<input id="log-submit" type="submit" name="resetpassword" value="Reset Password">
 		</form>
 	</div>
 </body>
