@@ -18,24 +18,27 @@ if (isset($_POST['confirm'])) {
 ?>
 
 <!DOCTYPE html>
-<html style="overflow: hidden;">
+<html>
 <head>
         <link rel="icon" href="images/FAVICON.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Logout | Vance Social&trade;</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="landing-body">
 
-<section id="logout">
-        <div><h1>LOGOUT</h1></div>
-<p id="q1234" style="color: white; text-align: center; font-family: agencyr; ">Are you sure you want to log out ?</p>
-<form action="logout.php" method="post">
+	<div class="login-container">
+		<img src="images/Landing/Troftey_logo(Landing).png">
+		<form action="logout.php" method="post">
+			<div class="logout-input">
+				
+				<input id="logout-checkbox" type="checkbox" name="alldevices" value="alldevices"> <label for="logout-checkbox">Logout of all devices</label>
+				
+			</div>
 
-<input style="margin-left: 4%;" type="checkbox" name="alldevices" value="alldevices"><a  id="e5123"> Logout of all devices </a><br><br>
-
-<input style="background-color: #ed2089" id="buton" type="submit" name="confirm" value="Confirm">
-</form><br>
-</section>
+			<input id="log-submit" type="submit" name="confirm" value="Logout">
+		</form>
+	</div>
 </body>
-
 </html>
+
+
