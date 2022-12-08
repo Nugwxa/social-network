@@ -42,7 +42,7 @@ class Post {
                                 </form>
                                 <br>
 
-</article><br><br>";
+</article>>";
                         } else {
                                 $posts .= "<article >
                                 <h3 id='post-head'><?php echo $username; ?> <span><?php if ($verified) { echo ' <img id='postv' src='images/verified.png' title='Verified User' >'; } ?> </span></h3>
