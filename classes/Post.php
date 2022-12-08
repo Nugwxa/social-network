@@ -54,7 +54,7 @@ class Post {
                                 </form>
                                 <br>
 
-</article><br><br>
+</article>
                                 ";
                         }
                 }
