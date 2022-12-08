@@ -32,7 +32,7 @@ class Post {
 
                         if (!DB::query('SELECT post_id FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$p['id'], ':userid'=>$loggedInUserId))) {
                                 $posts .= "<article >
-                                <div id='post-head'><img id='img' src='images/generic.jpg' > <span>diso </span></div>
+                                <h3 id='post-head'><?php echo $username; ?> <span><?php if ($verified) { echo ' <img id='postv' src='images/verified.png' title='Verified User' >'; } ?> </span></h3>
                                 <p id='postp'>
                                 ". htmlspecialchars($p['body']). "</p>
 
@@ -45,7 +45,7 @@ class Post {
 </article><br><br>";
                         } else {
                                 $posts .= "<article >
-                                <div id='post-head'><img id='img' src='images/generic.jpg' > <span><?php echo $username; ?><?php if ($verified) { echo ' <img id='postv' src='images/verified.png' title='Verified User' >'; } ?> </span></div>
+                                <h3 id='post-head'><?php echo $username; ?> <span><?php if ($verified) { echo ' <img id='postv' src='images/verified.png' title='Verified User' >'; } ?> </span></h3>
                                 <p id='postp'>
                                 ". htmlspecialchars($p['body'])."</p>
                                 <form action='profile.php?username=$username&postid=".$p['id']."' method='post'>
