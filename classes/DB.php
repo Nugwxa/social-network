@@ -13,4 +13,7 @@ class DB {
                 return $data;
                 }
         }
+        //This is a good start, but you should add extra functions here either in this class of in a class between this and the application layer.
+        //These functions can be Select, Delete, Insert and Update, they should take parameters and genarate a suitable SQL statement.
+        //This way you will have very few SQL staements all around your caode and it will be easier to read and update.
 }

@@ -56,11 +56,22 @@ if (Login::isLoggedIn()) {
 ');
 }
 if (isset($_GET['postid'])) {
+        //I like this, extracting business logic into a different class is a good idea
         Post::likePost($_GET['postid'], $userid);
 }
 if (isset($_POST['comment'])) {
         Comment::createComment($_POST['commentbody'], $_GET['postid'], $userid);
 }
+
+//One starting point for you is the way you arrange your code.
+//You should always aim to seperate concerns, i have noticed alot of DB specific code in your views and alot of buisiness logic is present in these views.
+//Ideally you want to separate your code into layers.
+//1. The infrastucture layer - This includes infratructure concerns like Data access and storage
+//2. Application logic - This layer should encapsulate all the business logic, things like fetching a user by id, creating a user,
+//Creating post, updating passwords etc should be in this layer, you did a bit of this in the post and comments classes. 
+//You should not have SQL Statements here, they should be in classes in the infrastructure layer. You can call those classes from this layer
+//3. The presentation layer is the files that the iser interacts with i.e this class, you should only have user interaction logic here, any logic like fecthing data done below belongs in the application layer.
+//Think about this and we can have a chat to see how to seperate these concerns into differnet layers.
 $followingposts = DB::query('SELECT posts.id, posts.body, posts.likes, users.`username` FROM users, posts, followers
 WHERE posts.user_id = followers.user_id
 AND users.id = posts.user_id
